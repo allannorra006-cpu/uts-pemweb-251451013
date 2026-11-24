@@ -1,0 +1,157 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Informasi Kegiatan Kampus</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <header>
+    <h1>Kegiatan Kampus Widyagama</h1>
+
+    <nav>
+      <a href="#tentang">Tentang</a>
+      <a href="#rundown">Rundown</a>
+      <a href="#daftar">Pendaftaran</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- BAGIAN TENTANG KEGIATAN -->
+    <section id="tentang">
+
+      <img src="images/kegiatan.jpg"
+           alt="Kegiatan mahasiswa di lingkungan kampus">
+
+      <div class="deskripsi">
+        <h2>Tentang Kegiatan</h2>
+
+        <p>
+          Kegiatan kampus merupakan salah satu bentuk aktivitas
+          mahasiswa untuk meningkatkan pengetahuan, keterampilan,
+          dan pengalaman dalam dunia pendidikan.
+          Kegiatan ini bertujuan untuk membangun kreativitas
+          serta meningkatkan kerja sama antar mahasiswa.
+        </p>
+
+        <p>
+          Melalui kegiatan ini, mahasiswa diharapkan menjadi
+          lebih <strong>aktif, kreatif,</strong> dan
+          <em>bertanggung jawab</em>.
+        </p>
+
+        <a href="https://www.widyagama.ac.id/"
+           target="_blank"
+           rel="noreferrer">
+          Kunjungi Website Universitas
+        </a>
+      </div>
+
+    </section>
+
+    <!-- BAGIAN RUNDOWN -->
+    <section id="rundown">
+
+      <div class="kolom">
+        <h2>Syarat Peserta</h2>
+
+        <ul>
+          <li>Mahasiswa aktif Universitas Widyagama.</li>
+          <li>Mengisi formulir pendaftaran.</li>
+          <li>Mengikuti seluruh rangkaian kegiatan.</li>
+          <li>Mematuhi peraturan panitia.</li>
+        </ul>
+      </div>
+
+      <div class="kolom">
+        <h2>Alur Pendaftaran</h2>
+
+        <ol>
+          <li>Mengisi data diri pada formulir.</li>
+          <li>Melakukan verifikasi data.</li>
+          <li>Menunggu konfirmasi dari panitia.</li>
+          <li>Mengikuti kegiatan sesuai jadwal.</li>
+        </ol>
+      </div>
+
+    </section>
+
+    <!-- BAGIAN FORMULIR PENDAFTARAN -->
+    <section id="daftar">
+
+      <h2>Formulir Pendaftaran</h2>
+
+      <form action="#" method="post">
+
+        <div class="form-group">
+          <label for="nama">Nama Lengkap</label>
+          <input type="text"
+                 id="nama"
+                 name="nama"
+                 placeholder="Masukkan nama lengkap"
+                 required>
+        </div>
+
+        <div class="form-group">
+          <label for="surel">Alamat Email</label>
+          <input type="email"
+                 id="surel"
+                 name="surel"
+                 placeholder="Masukkan alamat email"
+                 required>
+        </div>
+
+        <div class="form-group">
+          <label for="tanggal">Tanggal Lahir</label>
+          <input type="date"
+                 id="tanggal"
+                 name="tanggal">
+        </div>
+
+        <div class="form-group">
+          <label for="divisi">Pilih Divisi</label>
+
+          <select id="divisi" name="divisi">
+            <option value="">-- Pilih Divisi --</option>
+            <option value="acara">Divisi Acara</option>
+            <option value="perlengkapan">Divisi Perlengkapan</option>
+            <option value="dokumentasi">Divisi Dokumentasi</option>
+            <option value="konsumsi">Divisi Konsumsi</option>
+          </select>
+        </div>
+
+        <div class="persetujuan">
+          <input type="checkbox"
+                 id="setuju"
+                 name="setuju"
+                 required>
+
+          <label for="setuju">
+            Saya menyetujui seluruh ketentuan kegiatan.
+          </label>
+        </div>
+
+        <button type="submit">
+          Kirim Pendaftaran
+        </button>
+
+      </form>
+
+    </section>
+
+  </main>
+
+  <footer>
+    <p>
+      &copy; 2026 Pemrograman Web |
+      Informasi Panitia Kegiatan Kampus
+    </p>
+  </footer>
+
+</body>
+</html>

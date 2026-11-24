@@ -1,0 +1,226 @@
+
+/* PENGATURAN DASAR */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f3f6fa;
+  color: #263746;
+  line-height: 1.6;
+}
+
+/* HEADER */
+header {
+  background-color: #124e5a;
+  color: white;
+  padding: 25px;
+  text-align: center;
+}
+
+header h1 {
+  margin-bottom: 15px;
+}
+
+/* NAVIGASI FLEXBOX */
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  background-color: #087da0;
+  padding: 10px 20px;
+  border-radius: 6px;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  background-color: #0a9bc2;
+}
+
+/* KONTEN UTAMA */
+main {
+  max-width: 1000px;
+  margin: 25px auto;
+  padding: 0 20px;
+}
+
+/* BAGIAN TENTANG */
+#tentang {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  background-color: white;
+  padding: 25px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+#tentang img {
+  width: 35%;
+  max-height: 250px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.deskripsi {
+  flex: 1;
+}
+
+.deskripsi h2 {
+  color: #124e5a;
+  margin-bottom: 10px;
+}
+
+.deskripsi p {
+  margin-bottom: 10px;
+}
+
+.deskripsi a {
+  display: inline-block;
+  margin-top: 10px;
+  color: #087da0;
+  font-weight: bold;
+}
+
+/* BAGIAN RUNDOWN */
+#rundown {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+.kolom {
+  flex: 1;
+  background-color: white;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.kolom h2 {
+  color: #124e5a;
+  margin-bottom: 12px;
+}
+
+.kolom ul,
+.kolom ol {
+  padding-left: 22px;
+}
+
+/* BAGIAN PENDAFTARAN */
+#daftar {
+  background-color: white;
+  padding: 25px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+#daftar h2 {
+  color: #124e5a;
+  margin-bottom: 15px;
+}
+
+/* FORM FLEXBOX */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+label {
+  font-weight: bold;
+}
+
+input,
+select {
+  padding: 11px;
+  border: 1px solid #b8c5ce;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+input:focus,
+select:focus {
+  outline: 2px solid #087da0;
+}
+
+.persetujuan {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.persetujuan input {
+  width: 16px;
+  height: 16px;
+}
+
+.persetujuan label {
+  font-weight: normal;
+}
+
+button {
+  padding: 12px;
+  background-color: #124e5a;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #087da0;
+}
+
+/* FOOTER */
+footer {
+  background-color: #124e5a;
+  color: white;
+  text-align: center;
+  padding: 18px;
+}
+
+/* RESPONSIVE UNTUK HP */
+@media (max-width: 650px) {
+
+  #tentang {
+    flex-direction: column;
+  }
+
+  #tentang img {
+    width: 100%;
+  }
+
+  #rundown {
+    flex-direction: column;
+  }
+
+  nav {
+    flex-direction: column;
+  }
+
+  nav a {
+    width: 100%;
+    text-align: center;
+  }
+}
